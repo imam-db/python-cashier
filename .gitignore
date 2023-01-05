@@ -1,1 +1,24 @@
+# Compiled Python files
+*.pyc
+
+# Cached Python bytecode files
 __pycache__/
+*.py[co]
+
+# Build directories and files
+build/
+dist/
+*.egg-info
+
+# Test output files
+*.log
+*.junit.xml
+
+# OS-specific files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db

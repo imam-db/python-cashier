@@ -26,7 +26,7 @@ class Cashier:
     The user can choose to add multiple items.
     """
     def add_item(self):
-        self.items = add_item(self.items)
+        add_item(self.items)
 
     """
     The view_items method prints a summary of all items in the list, including the item name, quantity, and price.
@@ -39,7 +39,7 @@ class Cashier:
     If the selection is invalid, the delete operation is cancelled.
     """
     def delete_item(self):
-        self.items = delete_item(self.items)
+        delete_item(self.items)
     
     """
     The update_item method allows the user to select an item from the list to update by its number. 
@@ -48,13 +48,13 @@ class Cashier:
     If any of the inputs are invalid, the update is cancelled.
     """
     def update_item(self):
-        self.items = update_item(self.items)
+        update_item(self.items)
     
     """
     The reset_transaction method clears the list of items in the current transaction, effectively starting a new transaction.
     """
     def reset_transaction(self):
-        self.items = reset_transaction(self.items)
+        reset_transaction(self.items)
 
     """
     The menu method displays a menu of options for the user to choose from, 

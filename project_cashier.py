@@ -42,9 +42,9 @@ class Cashier:
         delete_item(self.items)
     
     """
-    The update_item method allows the user to select an item from the list to update by its number. 
-    If the selection is invalid, the update operation is cancelled. 
-    The user is then prompted to enter new values for the item name, quantity, and price per item. 
+    The update_item method allows the user to select an item from the list to update by its number.
+    If the selection is invalid, the update operation is cancelled.
+    The user is then prompted to select which aspect of the item to update: item name, quantity, or price.
     If any of the inputs are invalid, the update is cancelled.
     """
     def update_item(self):

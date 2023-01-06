@@ -21,31 +21,31 @@ def check_order(items):
     print(f"Final price: {final_price}")
 
 def add_item(items):
-        while True:
-            try:
-                item_name = input("Enter item name: ")
-                if item_name == "":
-                    raise ValueError
-                n_items = int(input("Enter quantity: "))
-                if n_items <= 0:
-                    raise ValueError
-                price_per_item = int(input("Enter price per item: "))
-                if price_per_item <= 0:
-                    raise ValueError
-                items.append({
-                    "item_name": item_name,
-                    "n_items": n_items,
-                    "price_per_item": price_per_item,
-                    "total_price": n_items * price_per_item
-                })
-                print(f"Item {item_name} added.")
-            except ValueError:
-                print("Invalid input. Item was not added.")
-            
-            # Ask if user wants to add another item
-            add_another = input("Do you want to add another item? (y/n) ")
-            if add_another.lower() != "y":
-                break
+    while True:
+        try:
+            item_name = input("Enter item name: ")
+            if item_name == "":
+                raise ValueError
+            n_items = int(input("Enter quantity: "))
+            if n_items <= 0:
+                raise ValueError
+            price_per_item = int(input("Enter price per item: "))
+            if price_per_item <= 0:
+                raise ValueError
+            items.append({
+                "item_name": item_name,
+                "n_items": n_items,
+                "price_per_item": price_per_item,
+                "total_price": n_items * price_per_item
+            })
+            print(f"Item {item_name} added.")
+        except ValueError:
+            print("Invalid input. Item was not added.")
+        
+        # Ask if user wants to add another item
+        add_another = input("Do you want to add another item? (y/n) ")
+        if add_another.lower() != "y":
+            break
 
 def view_items(items):
     print("-"*40)
@@ -66,8 +66,13 @@ def delete_item(items):
     except ValueError:
         print("Invalid selection.")
         return
-        
-    items.pop(item_number-1)
+    
+    confirm = input("Are you sure you want to delete this item? (y/n) ")
+    if confirm.lower() == "y":
+        items.pop(item_number-1)
+        print("Item deleted.")
+    else:
+        print("Delete cancelled.")
 
 def update_item(items):
     print("Select item to update:")

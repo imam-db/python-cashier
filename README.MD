@@ -15,46 +15,44 @@
 
 !['Flowchart app'](./images/python_cashier_project.drawio.png)
 
-Program kasir self-service ini dimulai dari tampilnya menu, dengan total ada 7 menu seperti gambar di bawah ini:
+The cashier app program operates as a self-service system, beginning with displaying the menu options to the customer. There are a total of 7 menu items, as shown in the accompanying image :
 
 !['Menu Awal'](./images/1.PNG)
 
-Untuk menambahkan item belanja, customer bisa memilih menu nomer 1.  
-Sebelum memilih menu dalam pilihan angka yang benar, terlebih dahulu masukkan pilihan diluar menu. Sebagai contoh memasukkan nomor 8 atau non angka. Hasilnya muncul error dengan keterangan "Invalid selection. Try again later." seperti dua gambar di bawah ini.
+Customers can add items to their order by selecting menu option 1. However, before making a selection, it is important to note that inputting an incorrect menu choice, such as number 8 or non-digit characters, will result in an error message "Invalid selection. Try again." as shown in the accompanying images.
 
 !['Salah Pilih Menu'](./images/2.PNG)  
 !['Salah Pilih Menu'](./images/3.PNG)
 
-Percobaan berikutnya memilih menu sesuai dengan pilihan menu.  
-Untuk setiap transaksi, bisa menambahkan item-item ke dalamnya dengan memilih menu 1. Setelah itu customer dapat memasukkan data produk, yaitu nama produk, total quantity dan harga tiap pcs-nya. Setelah memasukkan ketiga data tersebut, data produk berhasil disimpan. Kemudian muncul pilihan kembali apakah akan menambahkan item yang lain?jika iya masukkan "y" atau "n" jika ingin mengakhiri inputan item.
+After selecting the correct menu as displayed, customers can add items to their transaction by choosing menu option 1. They will then be prompted to input the product name, quantity, and price per item. Once these details have been successfully input, the customer will be asked if they wish to add more items to the transaction. If they choose to do so, they should input "y", otherwise, they should input "n" if they do not wish to add any more items.
 
 !['Menu 1'](./images/4.PNG)
 
-Setelah memilih "y" / menambahkan item yang lain, customer menginputkan kembali data-data produk seperti langkah-langkah sebelumnya.
+If the customer chooses to add more items, they will be prompted to input the product details (product name, quantity, and price per item) as before, and the process will repeat until the customer chooses to end the transaction by inputting "n".
 
 !['Menu 1-Tambah Items Lain'](./images/5.PNG)
 
-Lanjut ke menu ke 2 (View items). Customer bisa melihat item-item yang sudah ditambahkan sebelumnya, dengan detail yang ditampilkan yaitu nama produk, quantity dan total harga per produk.
+By selecting menu option 2 (View items), customers can view all of the items they have added to their transaction, including the product name, quantity, and the total price per product.
 
 !['Menu 2'](./images/6.PNG)
 
-Menu berikutnya, loncat dulu ke menu 4 (Update Items). Menu ini akan berguna bagi customer ketika ingin mengubah item yang sebelumnya sudah dimasukkan ke program. Seperti terlihat pada gambar, setelah memilih menu 4, langsung dihadapkan pilihan kembali berupa produk-produk yang sebelumnya sudah diinput. Customer tinggal mengisi angka sesuai produk yang ingin diubah. 
+Menu option 4 (Update item) allows customers to make changes to items they have already added to their transaction. After selecting this menu, a list of products that have been input will be displayed. Customers can then select the number of the product they wish to update and make necessary changes.
 
 !['Menu 4 - List Produk'](./images/7.PNG)
 
-Sebagai contoh, customer ingin mengubah item no. 3 (Semangka). Customer tinggal mengetik angka 3. Dan setelahnya muncul pilihan lagi apakah akan mengubah (1) nama produk, (2) quantity atau (3) harga per itemnya. Dan juga ada pilihan untuk (4) cancel jika dirasa salah memilih produk yang akan diubah, sehingga otomatis akan kembali ke menu sebelumnya.
+For example, if a customer wants to update item number 3 (Semangka) they would select number 3 from the list of products. The customer would then be presented with the option to update the product name (1), quantity (2), price per item (3) or to cancel the update (4). The latter option would return the customer to the main menu in case they have chosen the wrong product to update.
 
 !['Menu 4 - Produk terpilih - Action Update'](./images/8.PNG)
 
-Pilih menu 1 untuk mengubah nama produk. Sebagai contoh, customer ternyata salah menginput nama produk `semangka` dan mengubahnya menjadi `Semangka Merah`.
+If the customer chooses menu option 1, they will be prompted to input the new name of the product. For example, if they initially input the name of the product as `semangka` and later realize it should be `Semangka Merah`, they can update the name in this menu.
 
 !['Menu 4 - Produk terpilih - Update Nama'](./images/9.PNG)
 
-Pilihan menu 2 untuk mengubah quantity dari produk. Sebagai contoh, customer mengubah quantity dari `2` menjadi `12`.
+If the customer chooses menu option 2, they will be prompted to input the new quantity of the product. For example, if they initially input the quantity as `2` and later realize they want to change it to `12`, they can update the quantity in this menu.
 
 !['Menu 4 - Produk terpilih - Update Quantity'](./images/10.PNG)
 
-Pilihan menu 3 untuk mengubah harga per item dari produk. Sebagai contoh, customer mengubahnya dari `50000` menjadi `55000`.
+If the customer chooses menu option 3, they will be prompted to input the new price per item of the product. For example, if they initially input the price per item as `50000` and later realize they want to change it to `55000`, they can update the price in this menu.
 
 !['Menu 4 - Produk terpilih - Update Quantity'](./images/11.PNG)
 

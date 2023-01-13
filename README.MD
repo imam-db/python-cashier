@@ -17,7 +17,7 @@ Andi, the owner of a large supermarket in a city in Indonesia, is looking to imp
 - Update item (product name, quantity, price per item)
 - Delete item
 - Reset transaction
-- Warning if there are error input
+- Warning if there are errors input
 - Discount with several conditions
 
 

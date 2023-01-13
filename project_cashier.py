@@ -121,17 +121,17 @@ class Cashier:
                 continue
             
             if selection == 1:
-                cashier.add_item()
+                self.add_item()
             elif selection == 2:
-                cashier.view_items()
+                self.view_items()
             elif selection == 3:
-                cashier.delete_item()
+                self.delete_item()
             elif selection == 4:
-                cashier.update_item()
+                self.update_item()
             elif selection == 5:
-                cashier.check_order()
+                self.check_order()
             elif selection == 6:
-                cashier.reset_transaction()
+                self.reset_transaction()
             elif selection == 7:
                 break
             else:

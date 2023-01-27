@@ -1,7 +1,7 @@
 from cashier_functions import *
 
 
-class Cashier:
+class Transaction:
     """
     This is the Cashier class, which is responsible for managing a list of items and calculating the total price of an order with applicable discounts.
     The init method initializes the Cashier object with an empty list of items.
@@ -153,5 +153,5 @@ class Cashier:
                 print("Invalid selection. Try again.")
 
 
-cashier = Cashier()
-cashier.menu()
+transaction = Transaction()
+transaction.menu()

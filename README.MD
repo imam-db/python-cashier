@@ -114,3 +114,11 @@ When the customer confirms that they want to reset the transaction by pressing *
 To confirm that all items have been deleted, the customer can check using menu option `2 (View items)`. The list of products in the transaction should now be empty, as shown in the accompanying image, indicating that the transaction has been successfully reset.
 
 !['Menu 2 - View items'](./images/21.PNG)
+
+
+#### Future Work
+
+- Implement a database to store the products, transactions, and user information.
+- Add a login system to allow for multiple users to access the program and view different transactions.
+- Implement a GUI to make the program more user-friendly and visually appealing.
+- Add a search function to allow users to easily find specific products or transactions.
